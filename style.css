@@ -1,0 +1,83 @@
+body {
+  background: linear-gradient(135deg, #1f2933, #111827);
+  font-family: "Segoe UI", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  color: #fff;
+}
+
+.game-container {
+  background: #0f172a;
+  padding: 20px 25px 25px;
+  border-radius: 16px;
+  box-shadow: 0 15px 40px rgba(0,0,0,0.5);
+  text-align: center;
+}
+
+h1 {
+  margin-bottom: 10px;
+}
+
+.info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+button {
+  background: #22c55e;
+  border: none;
+  border-radius: 8px;
+  padding: 6px 12px;
+  cursor: pointer;
+  font-weight: bold;
+  color: #022c22;
+}
+
+button:hover {
+  background: #16a34a;
+}
+
+#board {
+  display: grid;
+  grid-template-columns: repeat(8, 42px);
+  gap: 6px;
+  justify-content: center;
+}
+
+.cell {
+  width: 42px;
+  height: 42px;
+  background: #334155;
+  border-radius: 6px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 18px;
+  user-select: none;
+}
+
+.cell:hover {
+  background: #475569;
+}
+
+.cell.open {
+  background: #e5e7eb;
+  color: #111827;
+  cursor: default;
+}
+
+.cell.mine {
+  background: #dc2626;
+  color: #fff;
+}
+
+.cell.flag {
+  background: #facc15;
+  color: #78350f;
+}
